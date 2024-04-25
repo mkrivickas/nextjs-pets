@@ -52,17 +52,20 @@ export default function Chat() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ message: userMessage, socket_id: socketId }),
+      body: JSON.stringify({
+        message: userMessage.trim(),
+        socket_id: socketId,
+      }),
     });
     setMessageLog((prev) => [
       ...prev,
-      { selfMessage: true, message: userMessage },
+      { selfMessage: true, message: userMessage.trim() },
     ]);
     setUserMessage("");
   }
 
   function handleInputChange(e) {
-    setUserMessage(e.target.value.trim());
+    setUserMessage(e.target.value);
   }
 
   return (
