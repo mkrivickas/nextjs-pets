@@ -29,10 +29,10 @@ const EditPage = async ({ params }) => {
       <div className="page-section">
         <div className="page-section-inner">
           <Link href="/admin" className="small-link">
-            &laquo; Back to admin dashboard
+            &laquo; Pas žvėrių valdovą
           </Link>
 
-          <h1 className="page-section-title mb-big">Not Found!</h1>
+          <h1 className="page-section-title mb-big">Nerasta!</h1>
         </div>
       </div>
     )
@@ -45,10 +45,10 @@ const EditPage = async ({ params }) => {
       <div className="page-section">
         <div className="page-section-inner">
           <Link href="/admin" className="small-link">
-            &laquo; Back to admin dashboard
+            &laquo; Pas žvėrių valdovą
           </Link>
 
-          <h1 className="page-section-title mb-big">Update a Pet</h1>
+          <h1 className="page-section-title mb-big">Atnaujink</h1>
           <EditForm pet={pet} />
         </div>
       </div>

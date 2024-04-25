@@ -107,7 +107,7 @@ export default function EditForm(props) {
       <input id="signature" type="hidden" name="signature" />
 
       <button style={{ opacity: isFormLocked ? ".1" : "1" }} id="submit-btn" className="our-btn">
-        Submit Changes
+        Patvirtinti
       </button>
     </form>
   )

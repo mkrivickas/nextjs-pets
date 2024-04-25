@@ -6,8 +6,8 @@ import { cookies } from "next/headers"
 const ss3 = Source_Sans_3({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Pet Adoption",
-  description: "The best local pet adoption center."
+  title: "Pūstinka",
+  description: "Darbas ir poilsis kaime."
 }
 
 export default function RootLayout({ children }) {
