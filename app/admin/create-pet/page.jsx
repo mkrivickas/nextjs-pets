@@ -88,18 +88,18 @@ const CreatePage = () => {
       <div className="page-section">
         <div className="page-section-inner">
           <Link href="/admin" className="small-link">
-            &laquo; Back to admin dashboard
+            &laquo; Pas žvėrių valdovą
           </Link>
 
-          <h1 className="page-section-title mb-big">Add New Pet</h1>
+          <h1 className="page-section-title mb-big">Atvesk žvėrį</h1>
           <form onSubmit={handleSubmit} id="manage-pet-form" action="/admin/store-pet" method="POST">
-            <input className="form-field" type="text" name="name" autoComplete="off" placeholder="name" />
-            <input className="form-field" type="text" name="birthYear" autoComplete="off" placeholder="Year born (e.g. 2019)" />
+            <input className="form-field" type="text" name="name" autoComplete="off" placeholder="Vardas" />
+            <input className="form-field" type="text" name="birthYear" autoComplete="off" placeholder="Renginys sukurtas (2019 m.)" />
             <select className="form-field" name="species">
               <option>dog</option>
               <option>cat</option>
             </select>
-            <textarea className="form-field" name="description" placeholder="Description..."></textarea>
+            <textarea className="form-field" name="description" placeholder="Aprašymas..."></textarea>
 
             <input className="form-field" id="file-field" type="file" onChange={handleFileChange} />
 
@@ -111,7 +111,7 @@ const CreatePage = () => {
             <input id="version" type="hidden" name="version" />
             <input id="signature" type="hidden" name="signature" />
             <button style={{ opacity: isFormLocked ? ".1" : "1" }} id="submit-btn" className="our-btn">
-              Add New Pet
+              Pridėti
             </button>
           </form>
         </div>

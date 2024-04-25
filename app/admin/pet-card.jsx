@@ -43,13 +43,13 @@ export default function PetCard(props) {
         <p className="pet-description">{pet.description}</p>
         <div className="action-buttons">
           <Link href={`/admin/edit-pet/${pet._id}`} className="action-btn">
-            Edit
+            Auklėti
           </Link>
           <Link href={`/admin/view-pet-contacts/${pet._id}`} className="action-btn">
-            View Contacts
+            Kontaktai
           </Link>
           <button className="action-btn" onClick={handleDeleteClick}>
-            Delete
+            Pašalinti
           </button>
         </div>
       </div>
